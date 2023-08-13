@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud app using jquery</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- for icons font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- js file -->
+    <script defer src="crud-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form">
+            <div class="inner-form">
+                <div class="input-wrapper">
+                    <label for="name">Username</label>
+                    <div class="input-group">
+                        <span class='icons'><i class="fa-solid fa-user"></i></span>
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                </div>
+                <div class="input-wrapper inp">
+                    <label for="email">Email</label>
+                    <div class="input-group">
+                        <span class='icons'><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="input-wrapper inp">
+                    <label for="pass">Password</label>
+                    <div class="input-group">
+                        <span class='icons'><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" name="pass" id="pass" placeholder="Enter your password">
+                    </div>
+                </div><br>
+                <div class="btn-group">
+                    <button id="submit-btn" class="btn btn-primary" value="">Add</button>
+                </div>
+
+            </div>
+        </form>
+    
+        <table id="table" border="2" class="table table-success table-striped">
+           <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th rowspan="2">Action</th>
+           </thead>
+           <tbody id="tbody">
+           </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+<!-- <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="password" name="pass" id="pass" placeholder="Enter your password">
+            <button id="submit-btn" class="btn btn-primary" value="">Add</button> -->
